@@ -40,7 +40,11 @@ export default function ContactMe() {
           Feel free to reach out for collaborations or just a friendly chat!
         </p>
       </div>
-      <form className="contact--form--container" onSubmit={handleSubmit}>
+      <form
+        className="contact--form--container"
+        onSubmit={handleSubmit}
+        netlify
+      >
         <div className="container">
           <label className="contact--label">
             <span className="text-md">First Name</span>
