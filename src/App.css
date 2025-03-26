@@ -5,6 +5,196 @@
   font-style: normal;
 }
 
+/* Default Dark Mode */
+/* Apply theme to the entire app */
+.App.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.App.light {
+  background-color: white;
+  color: black;
+}
+
+/* Ensure navbar and sections inherit colors */
+.navbar,
+.hero--section,
+.skills--section,
+.about--section,
+.portfolio--section,
+.testimonial--section,
+.contact--section,
+.footer--container {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark .navbar,
+.dark .hero--section,
+.dark .skills--section,
+.dark .about--section,
+.dark .portfolio--section,
+.dark .testimonial--section,
+.dark .contact--section,
+.dark .footer--container {
+  background-color: #121212;
+  color: white;
+}
+
+.light .navbar,
+.light .hero--section,
+.light .skills--section,
+.light .about--section,
+.light .portfolio--section,
+.light .testimonial--section,
+.light .contact--section,
+.light .footer--container {
+  background-color: white;
+  color: black;
+}
+
+/* General Dark Mode Improvements */
+.dark {
+  background-color: #121212; /* Deep black */
+  color: #f5f5f5; /* Light gray for readability */
+}
+
+/* Navbar */
+.dark .navbar {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+/* Section Backgrounds */
+.dark .hero--section,
+.dark .skills--section,
+.dark .portfolio--section,
+.dark .testimonial--section,
+.dark .contact--section,
+.dark .footer--container {
+  background-color: #181818; /* Slightly lighter black */
+  color: #ffffff; /* Ensures text is visible */
+}
+
+/* Make sure links and buttons have good contrast */
+.dark a {
+  color: #6ea8fe; /* Light blue for visibility */
+}
+
+.dark a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Improve button visibility */
+.dark .btn {
+  background-color: #2d2d2d;
+  color: #5e3bee;
+  border: 1px solid #5e3bee;
+}
+
+.dark .btn:hover {
+  background-color: #3a3a3a;
+  color: #ffffff;
+}
+
+/* Headings */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #ffffff;
+}
+
+/* Paragraphs */
+.dark p {
+  color: #dcdcdc;
+}
+
+/* Navbar Links */
+.dark .navbar--content {
+  color: #cccccc;
+}
+
+.dark .navbar--content:hover {
+  color: #ffffff;
+}
+.dark .text-md, .dark .text-sm {
+  color: #f5f5f5; /* Change blue to soft white for better contrast */
+}
+/* Dark Mode Input Fields */
+.dark .contact--input {
+  background-color: #222; /* Dark gray background */
+  color: #f5f5f5; /* Light text for readability */
+  border: 1px solid #444; /* Subtle border */
+}
+
+/* Input Placeholder Text */
+.dark .contact--input::placeholder {
+  color: #bdbdbd; /* Lighter gray for contrast */
+}
+
+/* Input Focus */
+.dark .contact--input:focus {
+  border-color: #6ea8fe; /* Light blue highlight */
+  outline: none;
+}
+/* Dark Mode - Skills Section Cards */
+.dark .portfolio--section--card,
+.dark .skills--section--card {
+  background-color: #222; /* Dark gray background */
+  color: #f5f5f5; /* Light text for better readability */
+  border: 1px solid #444; /* Subtle border */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect */
+.dark .skills--section--card:hover {
+  border-bottom: 4px solid #6ea8fe; /* Light blue accent */
+}
+
+
+/* Default Navbar Items (Light Mode) */
+.navbar--items.active {
+  background-color: rgba(255, 255, 255, 0.9); /* Light transparent background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dark Mode Navbar */
+.dark .navbar--items.active {
+  background-color: rgba(34, 34, 34, 0.95); /* Darker background for dark mode */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Navbar Items */
+.navbar--items ul {
+  padding: 10px 0;
+  list-style: none;
+}
+
+/* Navbar Links */
+.navbar--items.active ul li {
+  padding: 10px 20px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+
+/* Dark Mode - Navbar Links */
+.dark .navbar--items.active ul li {
+  color: #f5f5f5;
+}
+
+/* Hover Effect */
+.navbar--items.active ul li:hover {
+  color: #6ea8fe; /* Light blue accent */
+}
+
+
 body {
   font-family: 'Monocole', sans-serif;
 }
@@ -109,7 +299,7 @@ h2 {
 }
 /* Heading 3 */
 h2 {
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 34px;
 }
@@ -531,20 +721,13 @@ span.badge{
   border: 1.333px solid var(--primary);
   background: var(--white);
 }
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  /* Some browsers will not display the caret when using calc, so we put the fallback first */
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 21.2052C16.2374 21.4981 15.7626 21.4981 15.4697 21.2052L7.82318 13.5587C7.53029 13.2658 7.53029 12.791 7.82318 12.4981L8.17674 12.1445C8.46963 11.8516 8.9445 11.8516 9.2374 12.1445L16 18.9071L22.7626 12.1445C23.0555 11.8516 23.5303 11.8516 23.8232 12.1445L24.1768 12.4981C24.4697 12.791 24.4697 13.2658 24.1768 13.5587L16.5303 21.2052Z" fill="%23033333"/></svg>')
-    white no-repeat 98.5% !important; /* !important used for overriding all other customisations */
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 21.2052C16.2374 21.4981 15.7626 21.4981 15.4697 21.2052L7.82318 13.5587C7.53029 13.2658 7.53029 12.791 7.82318 12.4981L8.17674 12.1445C8.46963 11.8516 8.9445 11.8516 9.2374 12.1445L16 18.9071L22.7626 12.1445C23.0555 11.8516 23.5303 11.8516 23.8232 12.1445L24.1768 12.4981C24.4697 12.791 24.4697 13.2658 24.1768 13.5587L16.5303 21.2052Z" fill="%23033333"/></svg>')
-    white no-repeat calc(100% - 20px); /* Better placement regardless of input width */
+.checkbox--label,
+.contact--label.message{
+  padding: 12px;
 }
+
 /*For IE*/
-select::-ms-expand {
-  display: none;
-}
+
 .checkbox--label {
   display: flex;
   flex-direction: row;
@@ -575,7 +758,7 @@ input[type="checkbox"] {
 }
 
 .divider {
-  margin: 106px 0 42.67px;
+  margin: 10px 0 42.67px;
   height: 1.333px;
   width: 100%;
   background: rgba(40, 41, 56, 0.55);
@@ -673,7 +856,7 @@ input[type="checkbox"] {
   .contact--section,
   .footer--container {
     gap: 20px;
-    padding-top: 70px;
+    padding-top: 10px;
     padding-bottom: 70px;
   }
   .about--section {

@@ -22,8 +22,7 @@ export default function HeroSection() {
             <span className="hero--section-title--color">{title}</span>
           </h1>
           <p className="hero--section-description">
-            Passionate about building modern web applications with cutting-edge
-            technologies.
+            Passionate about building web applications.
           </p>
         </div>
         <div className="hero-button">

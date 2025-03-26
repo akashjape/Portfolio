@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = ({ toggleTheme }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const closeMenu = () => {
@@ -32,7 +32,6 @@ const Navbar = () => {
     { to: "heroSection", label: "Home" },
     { to: "MyPortfolio", label: "Portfolio" },
     { to: "mySkills", label: "Skills" },
-    { to: "AboutMe", label: "About Me" },
   ];
 
   return (
@@ -73,6 +72,17 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          <li
+            className={`navbar--content ${isNavOpen ? "active" : ""}`}
+            onClick={(setIsNavOpen) => {
+              closeMenu();
+              toggleTheme();
+            }}
+          >
+            {document.body.classList.contains("dark")
+              ? "Light Mode"
+              : "Dark Mode"}
+          </li>
         </ul>
       </div>
 

@@ -65,33 +65,32 @@ export default function ContactMe() {
             />
           </label>
           <label className="contact--label">
-            <span className="text-md">Email</span>
+            <span className="text-md">Email (Optional)</span>
             <input
               type="email"
               className="contact--input text-md"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              required
             />
           </label>
           <label className="contact--label">
             <span className="text-md">Phone Number</span>
             <input
-              type="number"
+              type="text"
               className="contact--input text-md"
               name="phoneNumber"
+              maxLength={10}
               value={formData.phoneNumber}
               onChange={handleChange}
               required
             />
           </label>
         </div>
-
-        <label className="contact--label">
+        <label className="contact--label message">
           <span className="text-md">Message</span>
           <textarea
-            className="contact--input text-md"
+            className="contact--input text-md message"
             name="message"
             rows="6"
             placeholder="Type your message..."

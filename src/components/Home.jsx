@@ -5,10 +5,10 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import AboutMe from "./AboutMe";
 
-const Home = () => {
+const Home = ({ theme }) => {
   return (
     <>
-      <div className="app-container">
+      <div className={`app-containern ${theme}`}>
         <Hero />
         <Projects />
         <Skills />
