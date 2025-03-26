@@ -30,7 +30,7 @@ export default function HeroSection() {
             <button className="btn btn-primary resume">Resume</button>
           </a>
           <a href="tel:7741001794">
-            <button className="btn btn-primary resume">
+            <button className="btn btn-primary call">
               <MdAddIcCall />
             </button>
           </a>

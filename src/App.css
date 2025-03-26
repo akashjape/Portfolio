@@ -450,7 +450,14 @@ h2 {
   width: 100%;
   height: 100%;
 }
-
+button.call{
+  height: 53.6px;
+  width: 127.15px;
+}
+button.call{
+  height: 53.6px;
+  width: 127.15px;
+}
 
 @media screen and (max-width : 1200px) {
 
@@ -465,6 +472,8 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
+
 
 }
 /* Hero Section Style Ends */
@@ -636,6 +645,20 @@ span.badge{
   font-size: 12px;
   margin-left: 8px;
 }
+
+@media screen and (min-width : 425px) and (max-width:664px) {
+  .portfolio--section--container{
+    width : 100%;
+  }
+  
+  .portfolio--section--card{
+    width: 130%;
+  }
+  .contact--form--container {
+    width: 130%;
+}
+  
+}
 /* Portfolio Ends */
 
 /* Testimonial */
@@ -683,7 +706,7 @@ span.badge{
 /* Testimonial Ends */
 .contact--section {
   display: flex;
-  padding: 100px 85px;
+  padding: 6rem 5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -742,6 +765,14 @@ input[type="checkbox"] {
   border: 0.15em solid var(--heading-color);
   border-radius: 0.15em;
   transform: translatey(-0.075em);
+}
+
+@media screen and (min-width : 425px) and (max-width:664px) {
+  
+  .contact--form--container {
+    width: 130% !important;
+}
+  
 }
 /* Contact End */
 
