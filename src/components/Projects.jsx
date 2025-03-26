@@ -11,7 +11,7 @@ export default function MyPortfolio() {
   }, []);
 
   return (
-    <section className="portfolio--section" id="MyPortfolio">
+    <section className="portfolio--section projects" id="MyPortfolio">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
           <p className="sub--title">Recent Projects</p>
