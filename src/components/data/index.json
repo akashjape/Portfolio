@@ -1,0 +1,91 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "src": "./img/skill/html.svg",
+      "title": "HTML"
+    },
+    {
+      "id": "2",
+      "src": "./img/skill/css-alt.svg",
+      "title": "CSS"
+    },
+    {
+      "id": "3",
+      "src": "./img/skill/javascript.svg",
+      "title": "JavaScript"
+    },
+    {
+      "id": "4",
+      "src": "./img/skill/react.svg",
+      "title": "React"
+    },
+    {
+      "id": "5",
+      "src": "./img/skill/java.svg",
+      "title": "Java"
+    },
+    {
+      "id": "6",
+      "src": "./img/skill/php.svg",
+      "title": "PHP"
+    },
+    {
+      "id": "7",
+      "src": "./img/skill/mysql.svg",
+      "title": "MySQL"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "src": "./img/placeholder-image.png",
+      "title": "E-commerce Site",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "link": "View In Github",
+      "technology": ["HTML", "CSS", "JavaScript", "React"]
+    },
+    {
+      "id": "2",
+      "src": "./img/placeholder-image-1.png",
+      "title": "Connectify Social Media Site",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "link": "View In Github",
+      "technology": ["HTML", "CSS", "JavaScript", "React"]
+    },
+    {
+      "id": "3",
+      "src": "./img/placeholder-image-2.png",
+      "title": "Easy Rentn",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "link": "View In Github",
+      "technology": ["HTML", "CSS", "JavaScript", "React"]
+    }
+  ],
+  "testimonial": [
+    {
+      "id": "1",
+      "count": "5",
+      "src": "./img/avatar-image.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Dianne Russel",
+      "author_designation": "Starbucks"
+    },
+    {
+      "id": "2",
+      "count": "5",
+      "src": "./img/avatar-image-1.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Kristin Watson",
+      "author_designation": "Louis Vuitton"
+    },
+    {
+      "id": "3",
+      "count": "5",
+      "src": "./img/avatar-image-2.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Kathryn Murphy",
+      "author_designation": "McDonald's"
+    }
+  ]
+}
