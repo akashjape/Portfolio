@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
-const Navbar = ({ toggleTheme }) => {
+const Navbar = ({ toggleTheme, theme }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const closeMenu = () => {
@@ -79,9 +79,7 @@ const Navbar = ({ toggleTheme }) => {
               toggleTheme();
             }}
           >
-            {document.body.classList.contains("dark")
-              ? "Dark Mode"
-              : "Light Mode"}
+            {theme === "dark" ? "Light Mode" : "Dark Mode"}
           </li>
         </ul>
       </div>
