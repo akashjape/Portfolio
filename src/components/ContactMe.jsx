@@ -41,9 +41,11 @@ export default function ContactMe() {
         </p>
       </div>
       <form
+        name="contact"
+        method="POST"
         className="contact--form--container"
+        data-netlify="true"
         onSubmit={handleSubmit}
-        netlify
       >
         <div className="container">
           <label className="contact--label">
