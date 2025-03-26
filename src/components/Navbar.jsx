@@ -80,8 +80,8 @@ const Navbar = ({ toggleTheme }) => {
             }}
           >
             {document.body.classList.contains("dark")
-              ? "Light Mode"
-              : "Dark Mode"}
+              ? "Dark Mode"
+              : "Light Mode"}
           </li>
         </ul>
       </div>
