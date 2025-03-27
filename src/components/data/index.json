@@ -41,15 +41,15 @@
       "id": "1",
       "src": "./img/Myntra.jpg",
       "title": "E-commerce Site",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "description": "An e-commerce web app replicating Myntra’s UI and features. It includes product listings, Add to cart , Remove, using React, Redux for state management, and Node or a backend. Styled with CSS, it ensures responsiveness and a smooth shopping experience.",
       "link": "https://e-commerce-site-clone-project.netlify.app/",
-      "technology": ["HTML", "CSS", "JavaScript", "React"]
+      "technology": ["HTML", "CSS", "JavaScript", "React", "Node"]
     },
     {
       "id": "2",
       "src": "./img/connectify-pf .jpg",
       "title": "Connectify Social Media Site",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "description": "A React Post Creation App allows users to create and post content dynamically. It features a form to enter post details (title, description), stores data using state management (useState, useReducer), and displays posts in a list.",
       "link": "https://connectify-social-media-project.netlify.app/",
       "technology": ["HTML", "CSS", "JavaScript", "React"]
     },
@@ -57,7 +57,7 @@
       "id": "3",
       "src": "./img/portfolio.jpg",
       "title": "Portfolio (This Site)",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "description": "A React Portfolio Website showcases personal projects, skills, etc. Built with React, CSS, it features sections like Projects, Skills, and Contact. The site is fully responsive, interactive and also includes dark mode.",
       "link": "https://akash-jape-portfolio.netlify.app/",
       "technology": ["HTML", "CSS", "JavaScript", "React"]
     }
