@@ -45,8 +45,16 @@ export default function ContactMe() {
         method="POST"
         className="contact--form--container"
         data-netlify="true"
-        onSubmit={handleSubmit}
+        data-netlify-honeypot="bot-field" /* Prevent spam */
       >
+        {/* Hidden input for Netlify to recognize the form */}
+        <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label>
+            Don't fill this out: <input name="bot-field" />
+          </label>
+        </p>
+
         <div className="container">
           <label className="contact--label">
             <span className="text-md">First Name</span>
@@ -54,8 +62,6 @@ export default function ContactMe() {
               type="text"
               className="contact--input text-md"
               name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
               required
             />
           </label>
@@ -65,8 +71,6 @@ export default function ContactMe() {
               type="text"
               className="contact--input text-md"
               name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
               required
             />
           </label>
@@ -76,8 +80,6 @@ export default function ContactMe() {
               type="email"
               className="contact--input text-md"
               name="email"
-              value={formData.email}
-              onChange={handleChange}
             />
           </label>
           <label className="contact--label">
@@ -87,8 +89,6 @@ export default function ContactMe() {
               className="contact--input text-md"
               name="phoneNumber"
               maxLength={10}
-              value={formData.phoneNumber}
-              onChange={handleChange}
               required
             />
           </label>
@@ -100,19 +100,11 @@ export default function ContactMe() {
             name="message"
             rows="6"
             placeholder="Type your message..."
-            value={formData.message}
-            onChange={handleChange}
             required
           />
         </label>
         <label className="checkbox--label">
-          <input
-            type="checkbox"
-            name="termsAccepted"
-            checked={formData.termsAccepted}
-            onChange={handleChange}
-            required
-          />
+          <input type="checkbox" name="termsAccepted" required />
           <span className="text-sm">I accept the terms</span>
         </label>
         <div>
