@@ -5,6 +5,9 @@
   font-style: normal;
 }
 
+.hero--section--img{
+  display: none !important;
+}
 /* Default Dark Mode */
 /* Apply theme to the entire app */
 .App.dark {
